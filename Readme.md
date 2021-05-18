@@ -1,7 +1,7 @@
 # Личный проект «Техномарт»
 
-* Студент: [Евгений Кулаков](https://up.htmlacademy.ru/htmlcss/31/user/1014749).
-* Наставник: `Неизвестно`.
+- Студент: [Евгений Кулаков](https://up.htmlacademy.ru/htmlcss/31/user/1014749).
+- Наставник: [Ирина Малиновская](https://up.htmlacademy.ru/htmlcss/31/user/29644).
 
 ---
 
