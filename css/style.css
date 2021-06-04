@@ -51,3 +51,27 @@
     url("../fonts/ptsansbold.woff") format("woff");
   font-display: swap;
 }
+
+:root {
+  --basic-red: #ee3643;
+  --basic-green: #63a63e;
+  --basic-greylight: #c5c5c5;
+  --basic-background: #f1f5f7;
+  --white: #ffffff;
+  --black: #000000;
+  --special-yellow: #ffbf47;
+  --special-blue: #3bbce3;
+  --special-lilac: #dc91d8;
+  --special-greenlight: #8ed78f;
+  --special-yellowlight: #ffd180;
+  --success: #5fbb2d;
+  --warning: #ffbf47;
+  --error: #ba2732;
+  --darken-red: #ca2c37;
+  --light-grey: #eaeaea;
+  --dark-blue: #293449;
+  --darken-blue: #32425c;
+  --light-brown: #f9f5f0;
+  --darken-green: #518534;
+  --bg-blue: #1d2739;
+}
