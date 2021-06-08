@@ -488,7 +488,7 @@ img {
   margin: 0;
   max-width: 560px;
   text-transform: uppercase;
-  word-break: break-all;
+  word-break: break-word;
 }
 
 .goods__btn,
