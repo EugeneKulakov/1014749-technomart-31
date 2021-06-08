@@ -486,8 +486,9 @@ img {
   background-color: var(--light-brown);
   color: var(--darken-blue);
   margin: 0;
-  max-width: 600px;
+  max-width: 560px;
   text-transform: uppercase;
+  word-break: break-all;
 }
 
 .goods__btn,
