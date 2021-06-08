@@ -465,7 +465,8 @@ img {
   left: 0;
 }
 
-.goods__wrap {
+.goods__wrap,
+.brands__wrap {
   display: flex;
   width: 100%;
   justify-content: space-between;
