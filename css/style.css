@@ -716,14 +716,13 @@ img {
   padding: 10px 44px 10px 45px;
 }
 
-.main__info {
+.about {
   display: flex;
   justify-content: space-between;
   margin-bottom: 70px;
 }
 
-.about__title,
-.location__title {
+.about__title {
   font-family: inherit;
   font-style: normal;
   font-weight: 400;
@@ -732,8 +731,7 @@ img {
   color: var(--black);
 }
 
-.about__text,
-.location__text {
+.about__text {
   font-family: "PT Sans", "Arial", sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -761,15 +759,15 @@ img {
   padding: 11px 40px 9px 41px;
 }
 
-.about {
+.about__description {
   width: 460px;
 }
 
-.location {
+.about__contact {
   width: 300px;
 }
 
-.location__button {
+.about__button {
   width: 100%;
 }
 
