@@ -1246,9 +1246,12 @@ img {
   border-bottom: 1px solid var(--basic-red);
 }
 
-.sorting__link--current {
+.sorting__link--current,
+.sorting__link--current:hover,
+.sorting__link--current:focus {
   color: var(--basic-red);
   border-bottom: none;
+  cursor: default;
 }
 
 .order {
