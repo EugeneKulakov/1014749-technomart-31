@@ -362,8 +362,8 @@
       </section>
     </main>
 
-    <footer>
-      <div>
+    <footer class="footer">
+      <div class="container footer__top-row">
         <a href="index.html">
           <img
             src="img/logo/logo-big.svg"
@@ -372,49 +372,79 @@
             alt="Логотип Техномарта"
           />
         </a>
-        <ul>
-          <li><a href="#">Компания</a></li>
-          <li><a href="#">Новости</a></li>
-          <li><a href="#">Каталог</a></li>
-          <li><a href="#">Доставка</a></li>
-          <li><a href="#">Контакты</a></li>
+        <ul class="menu">
+          <li class="menu__item">
+            <a class="menu__link" href="#">Компания</a>
+          </li>
+          <li class="menu__item"><a class="menu__link" href="#">Новости</a></li>
+          <li class="menu__item"><a class="menu__link" href="#">Каталог</a></li>
+          <li class="menu__item">
+            <a class="menu__link" href="#">Доставка</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="#">Контакты</a>
+          </li>
         </ul>
       </div>
-      <div>
-        <address>
+      <div class="container footer__middle-row">
+        <address class="footer__address">
           г. Санкт-Петербург, наб. Реки Карповки, 5 лит П
           <a href="tel:+78005558628">+7 800 555-86-28</a>
         </address>
-        <ul>
-          <li><a href="#">Материалы</a></li>
-          <li><a href="#">Техника</a></li>
-          <li><a href="#">Инструмент</a></li>
-          <li><a href="#">Спецпредложения</a></li>
+        <ul class="offer">
+          <li class="offer__item">
+            <a class="offer__link" href="#">Техника</a>
+          </li>
+          <li class="offer__item">
+            <a class="offer__link" href="#">Материалы</a>
+          </li>
+          <li class="offer__item">
+            <a class="offer__link" href="#">Инструмент</a>
+          </li>
+          <li class="offer__item">
+            <a class="offer__link" href="#">Спецпредложения</a>
+          </li>
         </ul>
       </div>
-      <div>
-        <p>© 2010–2021 Компания «Техномарт» Все права защищены</p>
-        <ul>
-          <li>
-            <a href="#" aria-label="Страница Техномарта в Вконтакте"></a>
-          </li>
-          <li>
-            <a href="#" aria-label="Страница Техномарта в Фейсбуке"></a>
-          </li>
-          <li>
-            <a href="#" aria-label="Страница Техномарта в Инстаграме"></a>
-          </li>
-        </ul>
-        <p>
-          Обратная связь:
-          <a href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
-        </p>
-        <p>
-          Разработано —
-          <a href="https://htmlacademy.ru/intensive/htmlcss" target="_blank"
-            >htmlacademy.ru</a
-          >
-        </p>
+      <div class="footer__bottom-row">
+        <div class="container footer__wrap">
+          <p class="footer__text">
+            © 2010–2021 Компания «Техномарт» Все права защищены
+          </p>
+          <ul class="social">
+            <li class="social__item">
+              <a
+                class="social__link"
+                href="#"
+                aria-label="Страница Техномарта в Вконтакте"
+              ></a>
+            </li>
+            <li class="social__item">
+              <a
+                class="social__link"
+                href="#"
+                aria-label="Страница Техномарта в Фейсбуке"
+              ></a>
+            </li>
+            <li class="social__item">
+              <a
+                class="social__link"
+                href="#"
+                aria-label="Страница Техномарта в Инстаграме"
+              ></a>
+            </li>
+          </ul>
+          <p class="footer__text">
+            Обратная связь:
+            <a href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+          </p>
+          <p class="footer__text">
+            Разработано —
+            <a href="https://htmlacademy.ru/intensive/htmlcss" target="_blank"
+              >htmlacademy.ru</a
+            >
+          </p>
+        </div>
       </div>
     </footer>
   </body>
