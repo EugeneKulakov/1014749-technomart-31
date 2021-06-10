@@ -1297,38 +1297,37 @@ img {
   position: absolute;
   content: "";
   background-repeat: no-repeat;
+  top: -2px;
+  left: 0;
+  opacity: 0.79;
 }
 
 .filter__input + .filter__label::before {
   width: 27px;
   height: 23px;
-  top: -2px;
-  left: 0;
   background-image: url(../img/checkbox-off.svg);
 }
 
 .filter__input:checked + .filter__label::before {
   width: 27px;
   height: 23px;
-  top: -2px;
-  left: 0;
   background-image: url(../img/checkbox-on.svg);
-  opacity: 0.89;
+}
+
+.filter__input:disabled + .filter__label,
+.filter__radio:disabled + .filter__label {
+  opacity: 0.38;
 }
 
 .filter__radio + .filter__label::before {
   width: 25px;
   height: 25px;
-  top: -2px;
-  left: 0;
   background-image: url(../img/radio-off.svg);
 }
 
 .filter__radio:checked + .filter__label::before {
   width: 25px;
   height: 25px;
-  top: -2px;
-  left: 0;
   background-image: url(../img/radio-on.svg);
 }
 
@@ -1336,6 +1335,13 @@ img {
 .filter__radio:focus + .filter__label::before {
   outline: 1px solid var(--special-grey);
   outline-offset: 2px;
+}
+
+.filter__input:not(:disabled) + .filter__label:hover::before,
+.filter__radio:not(:disabled) + .filter__label:hover::before,
+.filter__input:focus:not(:disabled) + .filter__label::before,
+.filter__radio:focus:not(:disabled) + .filter__label::before {
+  opacity: 1;
 }
 
 .filter fieldset:not(:last-of-type)::after {
