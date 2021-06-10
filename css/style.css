@@ -523,6 +523,15 @@ img {
   display: block;
 }
 
+.brands__link:hover,
+.brands__link:focus {
+  box-shadow: 0 4px 20px var(--black-opacity-015);
+}
+
+.brands__link:active {
+  opacity: 0.5;
+}
+
 .cards {
   display: flex;
   flex-wrap: wrap;
