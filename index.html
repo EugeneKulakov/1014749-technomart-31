@@ -109,7 +109,7 @@
         <div class="advertising">
           <h2 class="visually-hidden">Популярные категории товаров.</h2>
           <ul class="advertising__list">
-            <li class="advertising__item">
+            <li class="advertising__item advertising__item--current">
               <h3 class="advertising__title">Перфораторы</h3>
               <p class="advertising__description">Настоящие мужские игрушки</p>
               <img
@@ -119,7 +119,9 @@
                 height="266"
                 alt="Рабочий в каске перфоратором Bosch сверлит бетонную стену"
               />
-              <a class="btn" href="catalog.html">Открыть каталог</a>
+              <a class="btn advertising__link" href="catalog.html"
+                >Открыть каталог</a
+              >
             </li>
             <li class="advertising__item">
               <h3 class="advertising__title">Дрели</h3>
@@ -131,13 +133,17 @@
                 height="266"
                 alt="Рабочий в желтой каске дрелью Bosch сверлит кирпичную стену"
               />
-              <a class="btn" href="catalog.html">Открыть каталог</a>
+              <a class="btn advertising__link" href="catalog.html"
+                >Открыть каталог</a
+              >
             </li>
           </ul>
           <ul class="bullets">
             <li class="bullets__item">
               <button
-                class="bullets__button bullets__button--prev"
+                class="
+                  bullets__button bullets__button--prev bullets__button--active
+                "
                 type="button"
                 aria-label="Перейти к предыдущему слайду"
                 disabled

@@ -356,16 +356,30 @@ img {
   background-color: var(--error);
 }
 
+.advertising {
+  position: relative;
+  width: 620px;
+  height: 266px;
+}
+
 .advertising__list {
+  position: relative;
   list-style: none;
   margin: 0;
   padding: 0;
 }
 
 .advertising__item {
-  position: relative;
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
   width: 620px;
   height: 266px;
+}
+
+.advertising__item--current {
+  display: block;
 }
 
 .advertising__item img {
@@ -376,11 +390,27 @@ img {
 }
 
 .advertising__title {
+  position: absolute;
+  top: -13px;
+  left: 24px;
   font-family: inherit;
   font-style: normal;
   font-weight: 700;
   font-size: 36px;
   line-height: 36px;
+  color: var(--white);
+  text-transform: uppercase;
+}
+
+.advertising__description {
+  position: absolute;
+  top: 47px;
+  left: 24px;
+  font-family: inherit;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24px;
   color: var(--white);
 }
 
@@ -395,6 +425,13 @@ img {
 
 .advertising__img {
   background-color: var(--default);
+}
+
+.advertising__link {
+  position: absolute;
+  top: 201px;
+  left: 24px;
+  padding: 11px 46px 9px 46px;
 }
 
 .promo__block {
@@ -1439,4 +1476,55 @@ img {
   font-size: 17px;
   line-height: 18px;
   text-transform: uppercase;
+}
+
+.bullets {
+  position: absolute;
+  top: 214px;
+  left: 295px;
+  display: flex;
+}
+
+.bullets__item:not(:last-child) {
+  margin-right: 10px;
+}
+
+.bullets__button {
+  width: 10px;
+  height: 10px;
+  padding: 0;
+  border: 0;
+  border-radius: 50%;
+  background-color: var(--white);
+  border: 2px solid var(--white);
+  cursor: pointer;
+}
+
+.bullets__button--active {
+  background-color: var(--basic-red);
+  border-radius: 50%;
+  border: 2px solid var(--white);
+  cursor: default;
+}
+
+.controls__button {
+  position: absolute;
+  top: 123px;
+  width: 22px;
+  height: 40px;
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  background-color: transparent;
+  border: 0;
+  cursor: pointer;
+  background-image: url(../img/icon-left.svg);
+}
+
+.controls__button--prev {
+  left: 25px;
+}
+
+.controls__button--next {
+  right: 20px;
+  transform: rotate(180deg);
 }
