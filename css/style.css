@@ -70,6 +70,7 @@
   --darken-red: #ca2c37;
   --light-grey: #eaeaea;
   --dark-blue: #293449;
+  --dark-special-blue: #161d29;
   --darken-blue: #32425c;
   --medium-grey: #444444;
   --light-brown: #f9f5f0;
@@ -128,7 +129,7 @@ img {
 .header {
   min-height: 320px;
   background-color: var(--basic-background);
-  margin-bottom: 20px;
+  margin-bottom: 21px;
 }
 
 .container {
@@ -144,8 +145,8 @@ img {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-  padding-top: 42px;
-  margin-bottom: 25px;
+  padding-top: 46px;
+  margin-bottom: 26px;
 }
 
 .header__top {
@@ -166,6 +167,7 @@ img {
   background-color: transparent;
   border: none;
   outline: none;
+  padding-left: 42px;
 }
 
 .search__field::placeholder {
@@ -190,6 +192,7 @@ img {
   list-style: none;
   margin: 0;
   padding: 0;
+  width: 449px;
 }
 
 .user-controls__link {
@@ -203,7 +206,26 @@ img {
   text-decoration: none;
 }
 
+.user-controls__item--mark {
+  flex-grow: 1;
+}
+
+.user-controls__link--mark {
+  padding: 10px 15px 8px 42px;
+}
+
+.user-controls__link--cart {
+  min-width: 136px;
+  max-width: 160px;
+  padding: 10px 22px 8px 35px;
+}
+
+.user-controls__link--filled {
+  background-color: var(--basic-red);
+}
+
 .user-controls__link:active {
+  background-color: var(--dark-special-blue);
   opacity: 0.5;
 }
 
@@ -217,7 +239,7 @@ img {
   color: var(--white);
   text-decoration: none;
   background-color: var(--basic-green);
-  padding: 9px 16px 9px 19px;
+  padding: 10px 17px 8px 18px;
 }
 
 .user-controls__order:hover,
@@ -237,7 +259,10 @@ img {
   font-size: 16px;
   line-height: 23px;
   color: var(--basic-red);
-  width: 200px;
+  width: 230px;
+  margin-top: 0;
+  margin-right: 28px;
+  padding-left: 30px;
 }
 
 .contacts {
@@ -264,12 +289,14 @@ img {
   font-size: 14px;
   line-height: 24px;
   color: var(--darken-blue);
+  margin-top: 3px;
+  text-align: center;
 }
 
 .main-nav__list {
   list-style: none;
   margin: 0;
-  padding: 0;
+  padding: 0 0 0 21px;
   display: flex;
   flex-wrap: wrap;
   background-color: var(--darken-blue);
@@ -278,7 +305,7 @@ img {
 
 .main-nav__link {
   display: block;
-  padding: 15px 20px 15px 20px;
+  padding: 17px 28px 14px 30px;
   font-family: inherit;
   font-style: normal;
   font-weight: 400;
@@ -302,6 +329,7 @@ img {
   margin: 0;
   padding: 0;
   display: flex;
+  justify-content: flex-end;
   width: 290px;
 }
 
@@ -320,6 +348,14 @@ img {
   text-decoration: none;
   background-color: var(--white);
   padding: 10px;
+}
+
+.login__link--enter {
+  padding: 12px 27px 12px 20px;
+}
+
+.login__link--signup {
+  padding: 12px 24px;
 }
 
 .login__link:hover,
@@ -446,6 +482,7 @@ img {
   grid-template-rows: 123px 123px 123px;
   gap: 20px;
   margin-bottom: 59px;
+  padding-top: 38px;
 }
 
 .promo__block {
