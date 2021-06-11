@@ -77,6 +77,7 @@
   --darken-green: #518534;
   --dark-green: #367315;
   --bg-blue: #1d2739;
+  --blue-additional: #212a3a;
   --white-opacity-05: rgba(255, 255, 255, 0.5);
   --white-opacity-03: rgba(255, 255, 255, 0.3);
   --grey-opacity-03: rgba(136, 136, 136, 0.3);
@@ -901,14 +902,28 @@ img {
 
 .footer__top-row {
   display: flex;
+  padding-bottom: 19px;
+  justify-content: space-between;
 }
 
 .menu,
-.offer {
+.offer,
+.social {
   display: flex;
   list-style: none;
   margin: 0;
   padding: 0;
+}
+
+.menu {
+  display: flex;
+  width: 546px;
+  flex-wrap: wrap;
+  margin-top: 37px;
+}
+
+.menu__item:not(:last-child) {
+  margin-right: 58px;
 }
 
 .menu__link {
@@ -931,6 +946,17 @@ img {
 .menu__link:active {
   text-decoration: none;
   opacity: 0.5;
+}
+
+.offer {
+  display: flex;
+  flex-wrap: wrap;
+  width: 523px;
+  margin-top: 5px;
+}
+
+.offer__item:not(:last-child) {
+  margin-right: 58px;
 }
 
 .offer__link {
@@ -956,6 +982,7 @@ img {
   line-height: 24px;
   color: var(--basic-background);
   width: 338px;
+  padding-left: 3px;
 }
 
 .footer__address a {
@@ -965,6 +992,7 @@ img {
 }
 
 .footer__bottom-row {
+  padding: 19px 0 18px 0;
   background-color: var(--dark-blue);
 }
 
@@ -973,6 +1001,10 @@ img {
 }
 
 .footer__text {
+  display: flex;
+  flex-direction: column;
+  padding-top: 1px;
+  padding-left: 1px;
   font-family: inherit;
   font-style: normal;
   font-weight: 400;
@@ -990,12 +1022,60 @@ img {
   color: var(--basic-red);
 }
 
-.social {
-  list-style: none;
-  margin: 0;
-  padding: 0;
+.footer__middle-row {
   display: flex;
+  padding-bottom: 54px;
+  justify-content: space-between;
+}
+
+.footer__copyright {
+  width: 240px;
+  margin-right: auto;
+}
+
+.footer__text:last-child {
+  margin-left: 51px;
+  margin-right: 13px;
+}
+
+.social {
   flex-wrap: wrap;
+  padding-top: 17px;
+  margin-right: 120px;
+}
+
+.social__item:not(:last-child) {
+  margin-right: 4px;
+}
+
+.social__link {
+  display: block;
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  background-color: var(--blue-additional);
+  background-repeat: no-repeat;
+}
+
+.social__link--vk {
+  background-image: url(../img/icon-social/icon-vk.svg);
+  background-position: 7px 14px;
+}
+
+.social__link--fb {
+  background-image: url(../img/icon-social/icon-fb.svg);
+  background-position: 14px 10px;
+}
+
+.social__link--instagram {
+  background-image: url(../img/icon-social/icon-instagram.svg);
+  background-position: 10px 12px;
+}
+
+.social__link:hover,
+.social__link:focus,
+.social__link:active {
+  background-color: var(--basic-red);
 }
 
 .bullets,
