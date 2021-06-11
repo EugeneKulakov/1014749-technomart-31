@@ -445,9 +445,14 @@ img {
 }
 
 .promo__block {
+  position: relative;
   width: 300px;
-  height: 123px;
-  padding: 1px 20px 10px 20px;
+  min-height: 123px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  padding-left: 23px;
+  padding-bottom: 10px;
+  background-repeat: no-repeat;
 }
 
 .promo__title {
@@ -457,26 +462,39 @@ img {
   font-size: 24px;
   line-height: 30px;
   color: var(--white);
+  width: 175px;
+  margin-top: 21px;
+  margin-bottom: 13px;
 }
 
 .promo__block--materials {
   background-color: var(--warning);
+  background-image: url(../img/bucket.svg);
+  background-position: 213px 31px;
 }
 
 .promo__block--tools {
   background-color: var(--special-blue);
+  background-image: url(../img/icon-drill.svg);
+  background-position: 194px 34px;
 }
 
 .promo__block--machinery {
   background-color: var(--special-lilac);
+  background-image: url(../img/icon-tractor.svg);
+  background-position: 191px 31px;
 }
 
 .promo__block--sales {
   background-color: var(--special-greenlight);
+  background-image: url(../img/icon-cart-sale.svg);
+  background-position: 196px 26px;
 }
 
 .promo__block--delivery {
   background-color: var(--warning);
+  background-image: url(../img/icon-delivery.svg);
+  background-position: 191px 32px;
 }
 
 .promo__link {
