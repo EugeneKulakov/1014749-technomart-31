@@ -360,6 +360,8 @@ img {
   position: relative;
   width: 620px;
   height: 266px;
+  grid-column: 1 / 3;
+  grid-row: 2 / 4;
 }
 
 .advertising__list {
@@ -432,6 +434,14 @@ img {
   top: 201px;
   left: 24px;
   padding: 11px 46px 9px 46px;
+}
+
+.promo {
+  display: grid;
+  grid-template-columns: 300px 300px 300px;
+  grid-template-rows: 123px 123px 123px;
+  gap: 20px;
+  margin-bottom: 59px;
 }
 
 .promo__block {
