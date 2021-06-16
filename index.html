@@ -510,5 +510,56 @@
         </div>
       </div>
     </footer>
+
+    <section class="feedback">
+      <div class="feedback__wrap">
+        <h2 class="visually-hidden">Напишите нам</h2>
+        <form
+          class="feedback__form"
+          name="feedback"
+          action="https://echo.htmlacademy.ru"
+          method="post"
+        >
+          <p>
+            <label class="feedback__label" for="name">Ваше имя:</label>
+            <input
+              id="name"
+              class="feedback__input"
+              type="text"
+              name="name"
+              placeholder="Имя Фамилия"
+              required
+            />
+          </p>
+          <p>
+            <label class="feedback__label" for="email">Ваш e-mail:</label>
+            <input
+              id="email"
+              class="feedback__input"
+              type="email"
+              name="email"
+              placeholder="email@example.com"
+              required
+            />
+          </p>
+          <p>
+            <label class="feedback__label" for="message">Текст письма:</label>
+            <textarea
+              class="feedback__message"
+              id="message"
+              name="message"
+              placeholder="В свободной форме"
+              required
+            ></textarea>
+          </p>
+          <button class="feedback__button btn" type="submit">Отправить</button>
+        </form>
+        <button
+          class="feedback__close button-close"
+          type="button"
+          aria-label="Закрыть"
+        ></button>
+      </div>
+    </section>
   </body>
 </html>
