@@ -1727,10 +1727,6 @@ img {
   align-items: center;
 }
 
-.feedback--show {
-  display: flex;
-}
-
 .feedback__wrap {
   position: relative;
   width: 620px;
@@ -1841,10 +1837,6 @@ img {
   align-items: center;
 }
 
-.map--show {
-  display: flex;
-}
-
 .map__wrap {
   position: relative;
   width: 943px;
@@ -1884,10 +1876,6 @@ img {
   display: none;
   justify-content: center;
   align-items: center;
-}
-
-.notice--show {
-  display: flex;
 }
 
 .notice__wrap {
@@ -1959,4 +1947,8 @@ img {
 .notice__button:hover,
 .notice__button:focus {
   background-color: var(--white);
+}
+
+.modal-show {
+  display: flex;
 }
