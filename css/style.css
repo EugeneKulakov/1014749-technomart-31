@@ -1828,3 +1828,48 @@ img {
   line-height: 24px;
   color: var(--black);
 }
+
+.map {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  width: 100%;
+  height: 100%;
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+
+.map--show {
+  display: flex;
+}
+
+.map__wrap {
+  position: relative;
+  width: 943px;
+  height: 449px;
+  background-color: var(--white);
+  box-shadow: 0px 4px 20px var(--black-opacity-015);
+}
+
+.map__wrap::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  content: "";
+  width: 100%;
+  height: 7px;
+  background-color: var(--light-red);
+}
+
+.map__wrap img {
+  display: block;
+}
+
+.map__close {
+  position: absolute;
+  top: 14px;
+  right: 6px;
+}
