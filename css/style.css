@@ -271,7 +271,7 @@ img {
   width: 270px;
 }
 
-.contacts__tel {
+.contacts__phone {
   display: block;
   font-family: inherit;
   font-style: normal;
@@ -369,7 +369,7 @@ img {
   color: var(--basic-greylight);
 }
 
-.btn {
+.button {
   display: inline-block;
   padding-top: 11px;
   padding-bottom: 9px;
@@ -389,12 +389,12 @@ img {
   text-align: center;
 }
 
-.btn:hover,
-.btn:focus {
+.button:hover,
+.button:focus {
   background-color: var(--darken-red);
 }
 
-.btn:active {
+.button:active {
   background-color: var(--error);
 }
 
@@ -467,7 +467,7 @@ img {
   color: var(--white);
 }
 
-.advertising__img {
+.advertising__image {
   background-color: var(--default);
 }
 
@@ -606,8 +606,8 @@ img {
   word-break: break-word;
 }
 
-.goods__btn,
-.brands__btn {
+.goods__button,
+.brands__button {
   max-width: 300px;
   padding: 11px 24px 9px 24px;
 }
@@ -681,7 +681,7 @@ img {
   margin-bottom: auto;
 }
 
-.card__img {
+.card__image {
   display: flex;
   width: 218px;
   height: 170px;
@@ -967,7 +967,7 @@ img {
   width: 300px;
 }
 
-.about__button {
+.about__contact .about__button {
   width: 100%;
 }
 
