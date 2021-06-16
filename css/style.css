@@ -1873,3 +1873,90 @@ img {
   top: 14px;
   right: 6px;
 }
+
+.notice {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  width: 100%;
+  height: 100%;
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+
+.notice--show {
+  display: flex;
+}
+
+.notice__wrap {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: center;
+  width: 620px;
+  min-height: 282px;
+  padding: 54px 0 28px 0;
+  background-image: linear-gradient(var(--light-red), var(--light-red)),
+    linear-gradient(var(--medium-spec-grey), var(--medium-spec-grey));
+  background-size: 1px 7px, 1px 112px;
+  background-repeat: repeat-x;
+  background-color: var(--white);
+  background-position: 0 top, 0 bottom;
+  box-shadow: 0px 4px 20px var(--black-opacity-015);
+}
+
+.notice__close {
+  position: absolute;
+  top: 13px;
+  right: 6px;
+}
+
+.notice__title {
+  position: relative;
+  font-family: inherit;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 30px;
+  color: var(--black);
+  margin-bottom: 104px;
+  display: inline-block;
+  padding-left: 177px;
+  width: 620px;
+  text-align: left;
+  vertical-align: top;
+}
+
+.notice__title::before {
+  position: absolute;
+  content: "";
+  top: -18px;
+  left: 81px;
+  width: 66px;
+  height: 66px;
+  background-image: url("../img/icon-mark.svg");
+}
+
+.notice__order {
+  min-width: 192px;
+  margin: 0 10px 10px 12px;
+  padding: 11px 9px 9px 12px;
+  text-align: center;
+}
+
+.notice__button {
+  min-width: 192px;
+  margin-right: 10px;
+  padding: 11px 9px 9px 12px;
+  text-align: center;
+  color: var(--black);
+  background-color: var(--white);
+}
+
+.notice__button:hover,
+.notice__button:focus {
+  background-color: var(--white);
+}
