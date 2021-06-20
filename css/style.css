@@ -92,6 +92,7 @@
   --grey-additional: #e5e5e5;
   --black-opacity-03: rgba(0, 0, 0, 0.3);
   --black-opacity-015: rgba(0, 0, 0, 0.15);
+  --additional-blue: #3d546f;
 }
 
 *,
@@ -158,6 +159,10 @@ img {
   position: relative;
 }
 
+.search {
+  position: relative;
+}
+
 .search__field {
   width: 271px;
   height: 42px;
@@ -190,6 +195,31 @@ img {
   color: var(--black);
 }
 
+.search__icon {
+  position: absolute;
+  top: 12px;
+  left: 17px;
+  content: "";
+  width: 17px;
+  height: 17px;
+  fill: var(--white);
+  opacity: 0.3;
+}
+
+.search__field:hover + .search__icon {
+  opacity: 1;
+}
+
+.search__field:focus {
+  color: var(--black);
+  background-color: var(--white);
+}
+
+.search__field:focus + .search__icon {
+  fill: var(--basic-red);
+  opacity: 1;
+}
+
 .user-controls {
   display: flex;
   list-style: none;
@@ -215,12 +245,48 @@ img {
 
 .user-controls__link--mark {
   padding: 10px 15px 8px 42px;
+  position: relative;
+}
+
+.user-controls__link--mark::before {
+  position: absolute;
+  top: 13px;
+  left: 19px;
+  content: "";
+  width: 14px;
+  height: 16px;
+  background-image: url(../img/icon-bookmark.svg);
+  opacity: 0.3;
+}
+
+.user-controls__link--mark:hover::before,
+.user-controls__link--mark:focus::before,
+.user-controls__link--cart:hover::before,
+.user-controls__link--cart:focus::before {
+  opacity: 1;
+}
+
+.user-controls__link--mark:active::before,
+.user-controls__link--cart:active::before {
+  opacity: 0.3;
 }
 
 .user-controls__link--cart {
+  position: relative;
   min-width: 136px;
   max-width: 160px;
   padding: 10px 22px 8px 35px;
+}
+
+.user-controls__link--cart::before {
+  position: absolute;
+  top: 13px;
+  left: 12px;
+  content: "";
+  width: 15px;
+  height: 15px;
+  background-image: url(../img/icon-cart.svg);
+  opacity: 0.3;
 }
 
 .user-controls__link--filled {
@@ -283,6 +349,10 @@ img {
   text-decoration: none;
   border: 3px solid var(--white);
   padding: 4px 20px 5px 70px;
+  background-image: url(../img/icon-phone.svg);
+  background-size: 19px 19px;
+  background-repeat: no-repeat;
+  background-position: 36px 10px;
 }
 
 .contacts__address {
@@ -368,6 +438,22 @@ img {
 
 .login__link:active {
   color: var(--basic-greylight);
+}
+
+.login__icon {
+  position: relative;
+  top: 2px;
+  left: -2px;
+  fill: var(--basic-greylight);
+}
+
+.login__link:hover .login__icon,
+.login__link:focus .login__icon {
+  fill: var(--additional-blue);
+}
+
+.login__link:active .login__icon {
+  fill: var(--basic-greylight);
 }
 
 .button {
