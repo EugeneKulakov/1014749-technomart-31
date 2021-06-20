@@ -1406,6 +1406,7 @@ img {
   font-size: 13px;
   line-height: 18px;
   text-transform: uppercase;
+  margin-right: 95px;
 }
 
 .filter__head {
@@ -1456,8 +1457,12 @@ img {
   justify-content: space-between;
 }
 
-.sorting__item {
-  margin-right: 50px;
+.sorting__item:first-child {
+  margin-right: 70px;
+}
+
+.sorting li:nth-child(2) {
+  margin-right: 65px;
 }
 
 .sorting__link {
@@ -1491,6 +1496,37 @@ img {
   list-style: none;
   margin: 0;
   padding: 0;
+  width: 41px;
+}
+
+.order__item {
+  margin-right: 21px;
+}
+
+.order__link {
+  display: block;
+  width: 11px;
+  height: 10px;
+}
+
+.order__icon {
+  fill: var(--basic-greylight);
+}
+
+.order__link--down {
+  transform: translateY(8px) rotate(180deg);
+}
+
+.order__link--current .order__icon {
+  fill: var(--basic-red);
+}
+
+.order__link--current {
+  cursor: default;
+}
+
+.order__link:not(.order__link--current):hover .order__icon {
+  fill: var(--black);
 }
 
 .filter__list {
