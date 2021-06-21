@@ -606,19 +606,19 @@
     </footer>
 
     <section class="modal modal-feedback">
-      <div class="feedback__wrap">
+      <div class="modal-feedback__wrap">
         <h2 class="visually-hidden">Напишите нам</h2>
         <form
-          class="feedback__form"
+          class="modal-feedback__form"
           name="feedback"
           action="https://echo.htmlacademy.ru"
           method="post"
         >
           <p>
-            <label class="feedback__label" for="name">Ваше имя:</label>
+            <label class="modal-feedback__label" for="name">Ваше имя:</label>
             <input
               id="name"
-              class="feedback__input"
+              class="modal-feedback__input"
               type="text"
               name="name"
               placeholder="Имя Фамилия"
@@ -626,10 +626,10 @@
             />
           </p>
           <p>
-            <label class="feedback__label" for="email">Ваш e-mail:</label>
+            <label class="modal-feedback__label" for="email">Ваш e-mail:</label>
             <input
               id="email"
-              class="feedback__input"
+              class="modal-feedback__input"
               type="email"
               name="email"
               placeholder="email@example.com"
@@ -637,21 +637,23 @@
             />
           </p>
           <p>
-            <label class="feedback__label" for="message">Текст письма:</label>
+            <label class="modal-feedback__label" for="message"
+              >Текст письма:</label
+            >
             <textarea
-              class="feedback__message"
+              class="modal-feedback__message"
               id="message"
               name="message"
               placeholder="В свободной форме"
               required
             ></textarea>
           </p>
-          <button class="button feedback__button" type="submit">
+          <button class="button modal-feedback__button" type="submit">
             Отправить
           </button>
         </form>
         <button
-          class="feedback__close button-close"
+          class="modal-feedback__close button-close"
           type="button"
           aria-label="Закрыть"
         ></button>
@@ -659,7 +661,7 @@
     </section>
 
     <section class="modal modal-map">
-      <div class="map__wrap">
+      <div class="modal-map__wrap">
         <h2 class="visually-hidden">Как до нас добраться</h2>
         <img
           src="img/map-big.jpg"
@@ -668,7 +670,7 @@
           alt="Санкт-Петербург, наб. Реки Карповки, 5 лит П"
         />
         <button
-          class="map__close button-close"
+          class="modal-map__close button-close"
           type="button"
           aria-label="Закрыть"
         ></button>
@@ -676,14 +678,14 @@
     </section>
 
     <section class="modal modal-notice">
-      <div class="notice__wrap">
-        <h2 class="notice__title">Товар добавлен в корзину!</h2>
-        <a class="button notice__order" href="">Оформить заказ</a>
-        <button class="button notice__button" type="button">
+      <div class="modal-notice__wrap">
+        <h2 class="modal-notice__title">Товар добавлен в корзину!</h2>
+        <a class="button modal-notice__order" href="">Оформить заказ</a>
+        <button class="button modal-notice__button" type="button">
           Продолжить покупки
         </button>
         <button
-          class="button-close notice__close"
+          class="button-close modal-notice__close"
           type="button"
           aria-label="Закрыть"
         ></button>
