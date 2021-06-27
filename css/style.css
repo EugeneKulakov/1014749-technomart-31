@@ -2078,7 +2078,7 @@ img {
   height: 114px;
   padding: 5px 10px;
   font-family: "PT Sans", "Arial", sans-serif;
-  color: var(--darken-grey);
+  color: var(--special-grey);
   font-style: normal;
   font-weight: 400;
   font-size: 13px;
@@ -2274,4 +2274,43 @@ img {
 
 .main__brands {
   margin-bottom: 50px;
+}
+
+.modal-animation {
+  animation: popup;
+  animation-duration: 0.3s;
+  animation-timing-function: cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+@keyframes popup {
+  0% {
+    top: 2000px;
+  }
+  100% {
+    top: 0;
+  }
+}
+
+.error {
+  animation: error;
+  animation-duration: 0.3s;
+  animation-timing-function: linear;
+}
+
+@keyframes error {
+  0% {
+    transform: perspective(240px) rotateY(0deg);
+  }
+  25% {
+    transform: perspective(240px) rotateY(-5deg);
+  }
+  50% {
+    transform: perspective(240px) rotateY(0deg);
+  }
+  75% {
+    transform: perspective(240px) rotateY(5deg);
+  }
+  100% {
+    transform: perspective(240px) rotateY(0deg);
+  }
 }

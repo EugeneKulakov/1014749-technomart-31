@@ -207,7 +207,6 @@
                 "
                 type="button"
                 aria-label="Перейти к предыдущему слайду"
-                disabled
               ></button>
             </li>
             <li class="bullets__item">
@@ -257,7 +256,7 @@
             </p>
             <p class="card__price">25500<span>р.</span></p>
             <div class="card__action">
-              <a class="card__buy" href="#">Купить</a>
+              <a class="card__buy" href="order.html">Купить</a>
               <a class="card__mark" href="#">В закладки</a>
             </div>
           </li>
@@ -276,7 +275,7 @@
             </p>
             <p class="card__price">15500<span>р.</span></p>
             <div class="card__action">
-              <a class="card__buy" href="#">Купить</a>
+              <a class="card__buy" href="order.html">Купить</a>
               <a class="card__mark" href="#">В закладки</a>
             </div>
           </li>
@@ -295,7 +294,7 @@
             </p>
             <p class="card__price">25500<span>р.</span></p>
             <div class="card__action">
-              <a class="card__buy" href="#">Купить</a>
+              <a class="card__buy" href="order.html">Купить</a>
               <a class="card__mark" href="#">В закладки</a>
             </div>
           </li>
@@ -314,7 +313,7 @@
             </p>
             <p class="card__price">12500<span>р.</span></p>
             <div class="card__action">
-              <a class="card__buy" href="#">Купить</a>
+              <a class="card__buy" href="order.html">Купить</a>
               <a class="card__mark" href="#">В закладки</a>
             </div>
           </li>
@@ -472,7 +471,10 @@
             Вы можете забрать товар сами,<br />
             заехав в наш офис:
           </p>
-          <a class="about__map" href="#">
+          <a
+            class="about__map"
+            href="https://www.google.com/maps/place/Studio+212/@59.968342,30.317381,16z/data=!4m5!3m4!1s0x0:0xe703c377f3424272!8m2!3d59.9682431!4d30.3171593?hl=ru"
+          >
             <img
               src="img/map-small.jpg"
               width="300"
@@ -480,7 +482,9 @@
               alt="Санкт-Петербург, наб. Реки Карповки, 5 лит П"
             />
           </a>
-          <a class="button about__button" href="#"
+          <a
+            class="button about__button about__button--for-modal"
+            href="writeus.html"
             >Заблудились? Напишите нам!</a
           >
         </div>
@@ -622,6 +626,7 @@
               type="text"
               name="name"
               placeholder="Имя Фамилия"
+              pattern="[A-Za-zА-Яа-яЁё\s]{2,30}"
               required
             />
           </p>
@@ -645,6 +650,7 @@
               id="message"
               name="message"
               placeholder="В свободной форме"
+              minlength="3"
               required
             ></textarea>
           </p>
@@ -699,5 +705,10 @@
         ></button>
       </div>
     </section>
+    <script src="js/modal-map.js"></script>
+    <script src="js/modal-feedback.js"></script>
+    <script src="js/modal-notice.js"></script>
+    <script src="js/slider.js"></script>
+    <script src="js/services-tabs.js"></script>
   </body>
 </html>
