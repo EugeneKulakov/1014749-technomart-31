@@ -86,7 +86,7 @@
   --blue-additional: #212a3a;
   --white-opacity-05: rgba(255, 255, 255, 0.5);
   --white-opacity-03: rgba(255, 255, 255, 0.3);
-  --grey-opacity-03: rgba(136, 136, 136, 0.3);
+  --grey-opacity-03: rgba(197, 197, 197, 0.3);
   --grey-spec-opacity-03: rgba(169, 169, 169, 0.3);
   --grey: #888888;
   --special-grey: #a9a9a9;
@@ -95,6 +95,7 @@
   --black-opacity-03: rgba(0, 0, 0, 0.3);
   --black-opacity-015: rgba(0, 0, 0, 0.15);
   --additional-blue: #3d546f;
+  --transparent: transparent;
 }
 
 *,
@@ -194,7 +195,7 @@ img {
 }
 
 .search__field:focus::placeholder {
-  color: var(--black);
+  color: var(--transparent);
 }
 
 .search__icon {
@@ -404,6 +405,7 @@ img {
 
 .main-nav__link[href]:active {
   color: var(--white-opacity-05);
+  background-color: var(--bg-blue);
 }
 
 .login {
@@ -1308,8 +1310,14 @@ img {
   color: var(--special-yellowlight);
 }
 
+.footer__text a:hover,
+.footer__text a:focus {
+  text-decoration: underline;
+}
+
 .footer__text a:active {
   color: var(--basic-red);
+  text-decoration: none;
 }
 
 .footer__middle-row {
